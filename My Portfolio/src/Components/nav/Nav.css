@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+.navBar {  
+    display: flex;  
+    gap: 3rem;
+  font-family: "Doto", sans-serif;
+  font-size: 20px;
+  font-weight: 1000;
+  margin-bottom: 3rem;
+}
+
+.navBar a {
+  text-decoration: none;
+    color: var(--purple);
+    
+}
+
+.nav-link {
+  transition: color 0.5s ease;
+  
+}
+.nav-link:hover {
+  outline: 3px dashed var(--gray2); 
+  border-radius: 5px;
+  outline-offset: 6px; 
+  height:fit-content;
+  cursor: pointer;
+}
+header {
+  padding-top: 35px;
+  width: 700px;     
+}
+
+.theme-toggle {
+  margin-left: auto;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .3s ease;
+  outline: 3px dashed var(--gray2); 
+  border-radius: 5px;
+  outline-offset: 0px; 
+  height:fit-content; 
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+
+}
+
+.theme-toggle .icon {
+  font-size: 22px;
+  transition: transform .4s ease;
+}
+
+.theme-toggle .icon.light {
+  transform: rotate(0deg);
+}
+
+.theme-toggle .icon.dark {
+  transform: rotate(180deg);
+}
+/* .hover-box::after {
+  content: attr(data-desc);
+  top: 110%;   
+  color: var(--purple);
+  margin-right: 0;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity .5s ease;
+  white-space: nowrap;
+}
+
+.hover-box:hover::after {
+  opacity: 1;
+} */
+
+
+@media (max-width: 420px) {
+  .navBar {
+    gap: 1rem;              
+    font-size: 16px;       
+    padding-left: 80px;  
+    padding-right: 80px;     
+  }
+
+  .navBar a {
+    font-size: 14px;        
+  }
+
+  header {
+    width: 100%;          
+    padding-top: 20px;
+  }
+
+  .theme-toggle {
+    width: 35px;            
+    height: 35px;
+  }
+
+  .theme-toggle .icon {
+    font-size: 18px;       
+  }
+ 
+}

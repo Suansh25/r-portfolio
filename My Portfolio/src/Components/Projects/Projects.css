@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bg-color :#040404;
+    --gray: #F2F1F2;
+    --purple:#95A1F9;
+  }
+.card{
+    font-family: "Noto Sans", sans-serif;
+    align-items: left;
+    text-align: left;
+    width: 700px;
+}
+.card p{
+    text-align: justify;
+    width: fit-content ;
+}
+.skills {
+    text-decoration: none;
+    font-family: "Doto", sans-serif;
+    font-weight: 5000;
+    border: 2px solid var(--purple);
+    border-radius: 5px;
+    width: 60px;
+    height: 23px;
+    text-align: center;
+    margin-right: 15px; 
+    display: inline-block; 
+    background-color: var(--bg-color);
+    color: var(--purple);
+  }
+  .Images-scroll{
+    width: 700px;
+    width: fit-content ;
+  }
+  .Images-scroll img{
+    width: 205px;
+    height: 150px;
+    margin-right: 27px;
+    border-radius: 5px;
+  }
+  

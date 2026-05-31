@@ -1,0 +1,107 @@
+.FooterBar {
+  display: flex;
+  color: var(--purple);
+  font-family: "Doto", sans-serif;
+  font-size: 20px;
+  font-weight: 1000;
+  font-style: normal;
+  margin-bottom: 1rem;
+  gap: 1.5rem;
+}
+.ending{
+  font-family: "Doto", sans-serif;
+  color: var(--gray);
+  font-weight: 1000;
+  font-size: 20px;
+  margin-left: 0;
+  display: flex;
+}
+.ending2{
+  font-family: "Doto", sans-serif;
+  color: var(--gray);
+  font-weight: 1000;
+  font-size: 20px;
+  margin-left: 0;
+  padding-top: 0px;
+  display: flex;
+  padding-bottom: 5rem;
+}
+.arrow-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--purple);
+  padding-right: 15px; 
+  border-radius: 6px;
+  padding: 0px 8px;
+}
+
+
+.arrow-link::after {
+  content: "↗";  
+  position: absolute;
+  top: -6px;   
+  right: -2px;
+  font-size: 14px;
+  color: var(--purple);
+  transition: transform 0.3s ease;
+}
+
+.arrow-link:hover::after {
+  animation: bounce 0.3s ease infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.FooterBar a:hover{
+  /* color: var(--gray);
+  outline: 3px dashed var(--gray2); 
+  border-radius: 5px;
+  outline-offset: 6px;  */
+  cursor: pointer;
+}
+.FooterBar a {
+  margin-left: 0;  
+  text-decoration: none;
+  color: var(--purple);
+  margin-right: 1.5rem;
+  transition: color 0.3s ease;
+}
+.FooterBar p {
+  font-size: 18px;
+  color: var(--gray);
+  margin: 0;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 420px) {
+  .FooterBar {
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 3rem;
+    min-height: 100%;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  .FooterBar a {
+    margin-right: 0;
+    font-size: 16px;
+    white-space: normal;
+  }
+
+  .FooterBar p {
+    font-size: 14px;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}

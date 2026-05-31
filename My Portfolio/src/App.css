@@ -1,0 +1,51 @@
+:root {
+  --bg-color: #040404;
+  --gray: #F2F1F2;
+  --purple: #95A1F9;
+  --gray2: #ffffff5e;
+}
+
+.light-theme {
+  --bg-color: #fffbfb;
+  --gray: #f119f1;
+  --purple: #2e2f34;
+  --gray2: #ce12125e;
+}
+.container{
+  width: 700px;            
+  margin: 0 auto;          
+  text-align: center; 
+}
+#scrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 2px;
+  width: 0%;
+  background: linear-gradient(to right, var(--gray ),var(--purple));
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
+  transition: width 0.2s ease-out; 
+  z-index: 9999;
+}
+.scroll-top {
+  position: fixed;
+  bottom: 30px;    
+  right: 30px;       
+  width: 40px;
+  height: 40px;
+  background: var(--gray);
+  color: var(--purple);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.scroll-top:hover {
+  transform: scale(1.15);
+
+}
