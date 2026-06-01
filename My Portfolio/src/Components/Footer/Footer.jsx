@@ -13,7 +13,7 @@ function Footer(){
         <div className="ending">
         <p>© Made by Suansh</p>  </div>
         <div className="ending2">
-        <p>Powered by passion, patience, and AI Magic.</p>
+        <p>Powered by passion, patience, and Code Magic.</p>
         </div>
         </>
     )
