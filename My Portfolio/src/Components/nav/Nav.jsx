@@ -16,7 +16,7 @@ function Nav({ toggleTheme, theme }) {
         <nav className='navBar'>
           <Link to="/home" className="nav-link">Home</Link>
           <Link to="/projects" className="nav-link">Projects</Link>
-          <Link to="/contact" className="nav-link">Contact.</Link>
+          <Link to="/contact" className="nav-link">About Me.</Link>
            
           <div className="theme-toggle" onClick={toggleTheme}>
             <div className={`icon ${theme}`}>

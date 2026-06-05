@@ -15,6 +15,7 @@
   width: 700px;            
   margin: 0 auto;          
   text-align: center; 
+  
 }
 #scrollProgress {
   position: fixed;
@@ -22,8 +23,9 @@
   left: 0;
   min-height: 2px;
   width: 0%;
-  background: linear-gradient(to right, var(--gray ),var(--purple));
+  background: linear-gradient(to right, var(--bg-color ),var(--purple));
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
+  
   transition: width 0.2s ease-out; 
   z-index: 9999;
 }
@@ -33,7 +35,8 @@
   right: 30px;       
   width: 40px;
   height: 40px;
-  background: var(--gray);
+  background: var(--bg-color);
+    border: 2px solid var(--purple);
   color: var(--purple);
   border-radius: 50%;
   display: flex;
