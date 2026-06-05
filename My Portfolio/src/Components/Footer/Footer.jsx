@@ -12,9 +12,7 @@ function Footer(){
         </nav>
         <div className="ending">
         <p>© Made by Suansh</p>  </div>
-        <div className="ending2">
-        <p>Powered by passion, patience, and Code Magic.</p>
-        </div>
+     
         </>
     )
 }

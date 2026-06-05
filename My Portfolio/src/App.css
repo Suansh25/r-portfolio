@@ -6,9 +6,9 @@
 }
 
 .light-theme {
-  --bg-color: #ffffff45;
-  --gray: #f17719;
-  --purple: #2e2f34;
+  --bg-color: #FFFDF2;
+  --gray: #000000;
+  --purple: #767778e7;
   --gray2: #ce12125e;
 }
 .container{
@@ -42,9 +42,13 @@
   font-size: 28px;
   cursor: pointer;
   transition: all 0.3s ease;
+  animation: fadeUp 0.3s ease;
   z-index: 9999;
 }
-
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 .scroll-top:hover {
   transform: scale(1.15);
 

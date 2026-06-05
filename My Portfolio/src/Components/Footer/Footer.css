@@ -16,16 +16,7 @@
   margin-left: 0;
   display: flex;
 }
-.ending2{
-  font-family: "Doto", sans-serif;
-  color: var(--gray);
-  font-weight: 1000;
-  font-size: 20px;
-  margin-left: 0;
-  padding-top: 0px;
-  display: flex;
-  padding-bottom: 5rem;
-}
+
 .arrow-link {
   position: relative;
   display: inline-block;
@@ -87,9 +78,9 @@
     flex-direction: row;
     align-items: center;
     font-size: 16px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     min-height: 100%;
-    gap: 0.8rem;
+    gap: 0rem;
     padding: 1rem;
   }
 
@@ -97,11 +88,25 @@
     margin-right: 0;
     font-size: 16px;
     white-space: normal;
+    gap: 0.8rem;
   }
 
   .FooterBar p {
     font-size: 14px;
-    margin-top: 0.5rem;
-    text-align: center;
+    margin-top: 0rem;
+    text-align: left;
   }
+  .ending{
+    padding-left: 15px;
+  }
+  .ending{
+  font-family: "Doto", sans-serif;
+  color: var(--gray);
+  font-weight: 1000;
+  font-size: 20px;
+  
+  display: flex;
+}
+
+  
 }
