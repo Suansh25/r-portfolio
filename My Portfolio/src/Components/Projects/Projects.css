@@ -10,11 +10,17 @@
     font-family: "Noto Sans", sans-serif;
     align-items: left;
     text-align: left;
-    width: 700px;
+    
 }
 .card p{
     text-align: justify;
     width: fit-content ;
+}
+.mobile-text {
+  display: none;
+}
+.card ul li::marker{
+  color: var(--purple);
 }
 .skills {
     text-decoration: none;
@@ -22,48 +28,109 @@
     font-weight: 5000;
     border: 2px solid var(--purple);
     border-radius: 5px;
-    width: 60px;
-    height: 23px;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 4px 4px 4px;
     text-align: center;
     margin-right: 15px; 
+    margin-bottom: 5px;
     display: inline-block; 
     background-color: var(--bg-color);
     color: var(--purple);
   }
-  .Images-scroll{
-    width: 725px;
-    width: fit-content ;
-  }
-  .Images-scroll img{
-    width: 205px;
-    height: 150px;
-    margin-right: 27px;
-    border-radius: 5px;
-  }
-  
+  .Images-scroll {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  width: 100%;
+
+  scrollbar-width: thin; /* Firefox */
+  -webkit-overflow-scrolling: touch;
+}
+
+.Images-scroll > * {
+  flex-shrink: 0;
+}
+
+.Images-scroll img {
+  width: 205px;
+  height: 150px;
+  border-radius: 5px;
+  cursor: zoom-in;
+  object-fit: cover;
+}
+.Images-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.Images-scroll {
+  scrollbar-width: none;
+}
+[data-rmiz-modal-overlay="visible"] {
+  background-color: var(--purple) !important;
+}
+
+[data-rmiz-btn-unzoom] {
+  color: var(--purple) !important;
+  background: var(--bg-color )!important;
+  border-radius: 50%;
+  padding: 8px;
+}
 @media (max-width: 420px) {
+  body {
+  overflow-x: hidden;
+}
   .card{
     padding-left: 15px;
     padding-right: 15px;
   }
-  .Images-scroll {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 100%;
-    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
-    scrollbar-width: none; /* hide scrollbar Firefox */
+    .mobile-text {
+    display: block;
   }
+
+  .desktop-text {
+    display: none;
+  }
+  .Images-scroll {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.Images-scroll > * {
+  flex: 0 0 auto;
+}
+
+.Images-scroll img {
+  width: 205px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
 
   .Images-scroll::-webkit-scrollbar {
-    display: none; /* hide scrollbar Chrome/Safari */
+    display: none; 
   }
 
-  .Images-scroll img {
-    flex-shrink: 0; /* prevent images from shrinking */
-    width: 215px;
-    height: 150px;
-    margin-right: 15px;
-    border-radius: 5px;
-  }
+ 
+
+.Images-scroll > * {
+  flex-shrink: 0;
+}
+[data-rmiz-modal-overlay="visible"] {
+  background-color: var(--purple) !important;
+}
+
+[data-rmiz-btn-unzoom] {
+  color: var(--purple) !important;
+  background: var(--bg-color )!important;
+  border-radius: 50%;
+  padding: 8px;
+}
 }
