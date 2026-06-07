@@ -41,17 +41,17 @@ function Home() {
   })()}
 </div>
 
-      <div className="content">
+      <div className="Homecontent">
 
-        <p>Hi, and welcome to my little space on the internet!
+        <p>Hi, and welcome to my space on the internet!
           <br /><br />
           I'm a curious, solution-driven software engineer who loves turning complex challenges into elegant, user-friendly experiences. I enjoy working across both frontend and backend — seeing a project through from raw data to the final design is something I find deeply fulfilling.
           <br /><br />
-          This full-stack mindset helps me build cohesive and thoughtful <a href="#">Solutions</a> that just feel right.
+          This full-stack mindset helps me build cohesive and thoughtful <i><a href="#">Solutions</a></i> that just feel right.
           <br /><br />
           I’m always learning something new, constantly coding, and yes — occasionally celebrating when everything works on the first try.
           <br /><br />
-          This space is where I share what I <a href="#">build</a>, what I <a href="#">learn</a>, and all the small <a href="#">wins</a> along the way. Hopefully, it’ll grow into a collection of moments I’m proud of.
+          This space is where I share what I <i><a href="#">build</a></i>, what I <i><a href="#">learn</a></i>, and all the small <i><a href="#">wins</a></i> along the way. Hopefully, it’ll grow into a collection of moments I’m proud of.
           <br /><br />
           Besides work, you can find me reading
           , talking about Indian History, working out, and occasionally posting thoughts and memes.
