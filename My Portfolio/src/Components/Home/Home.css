@@ -38,23 +38,25 @@
   padding-top: 50px;
   display: flex;
   text-align: left;
-  font-family: "Doto", sans-serif;
+  /* font-family: "Doto", sans-serif; */
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
-
+.Homecontent-mobile{
+     display: none;
+}
 .Homecontent p {
   margin: 0;
-  font-family: "Doto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: var(--gray);
 }
 
 .Homecontent a {
   text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
   color: var(--purple);
 }
-
 .dotted-line {
   border: none;
   border-top: .5px dashed var(--purple);
@@ -69,7 +71,7 @@
   
   }
 
-  .Homecontent {
+  .Homecontent-mobile {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -88,4 +90,12 @@
     font-size: 13px;
     line-height: 1.5;
   }
+  .Homecontent{
+    display: none;
+  }
+  .Homecontent-mobile a {
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--purple);
+}
 }

@@ -16,51 +16,93 @@ function Home() {
   return (
     <>
       <div id="scrollProgress"></div>
-     <div className="title">
-  <h1>Greetings, <span>I'm Suansh!</span></h1>
-  <p>{currentDate.toDateString()}</p>
+      <div className="title">
+        <h1>Greetings, <span>I'm Suansh!</span></h1>
+        <p>{currentDate.toDateString()}</p>
 
-  {(() => {
-    const poeticLines = [
-      "I build with code, but I dream in possibilities—each project a bridge between logic and wonder.",
-      "In every pixel and pattern, I search for meaning—turning data into stories and insight into impact.",
-      "My craft lies where curiosity meets engineering, shaping ideas into experiences worth remembering.",
-      "From maps to machines that see, I chase the art inside the algorithm and the soul inside the system.",
-      "I write code the way one writes poetry—each line meant to connect, solve, and illuminate.",
-      "To me, technology is both toolkit and canvas—a place where imagination learns to speak in logic.",
-      "Every challenge is a new horizon; every solution, a step closer to who I aim to become.",
-      "Across models, interfaces, and moving pieces of data, I design not just products—but possibilities.",
-      "Between the known and the unknown, I choose the unknown—because that’s where invention begins.",
-      "I’m building a future made of curiosity, compassion, and code—one thoughtful project at a time."
-    ];
+        {(() => {
+          const poeticLines = [
+            "I build with code, but I dream in possibilities—each project a bridge between logic and wonder.",
+            "In every pixel and pattern, I search for meaning—turning data into stories and insight into impact.",
+            "My craft lies where curiosity meets engineering, shaping ideas into experiences worth remembering.",
+            "From maps to machines that see, I chase the art inside the algorithm and the soul inside the system.",
+            "I write code the way one writes poetry—each line meant to connect, solve, and illuminate.",
+            "To me, technology is both toolkit and canvas—a place where imagination learns to speak in logic.",
+            "Every challenge is a new horizon; every solution, a step closer to who I aim to become.",
+            "Across models, interfaces, and moving pieces of data, I design not just products—but possibilities.",
+            "Between the known and the unknown, I choose the unknown—because that’s where invention begins.",
+            "I’m building a future made of curiosity, compassion, and code—one thoughtful project at a time."
+          ];
 
-    const indexForToday = new Date().getDate() % poeticLines.length;
-    const todaysLine = poeticLines[indexForToday];
+          const indexForToday = new Date().getDate() % poeticLines.length;
+          const todaysLine = poeticLines[indexForToday];
 
-    return <p><i>{todaysLine}</i></p>;
-  })()}
-</div>
+          return <p><i>{todaysLine}</i></p>;
+        })()}
+      </div>
 
       <div className="Homecontent">
 
-        <p>Hi, and welcome to my space on the internet!
+        <p>
+          Hi, and welcome to my corner of the internet!
           <br /><br />
-          I'm a curious, solution-driven software engineer who loves turning complex challenges into elegant, user-friendly experiences. I enjoy working across both frontend and backend — seeing a project through from raw data to the final design is something I find deeply fulfilling.
-          <br /><br />
-          This full-stack mindset helps me build cohesive and thoughtful <i><a href="#">Solutions</a></i> that just feel right.
-          <br /><br />
-          I’m always learning something new, constantly coding, and yes — occasionally celebrating when everything works on the first try.
-          <br /><br />
-          This space is where I share what I <i><a href="#">build</a></i>, what I <i><a href="#">learn</a></i>, and all the small <i><a href="#">wins</a></i> along the way. Hopefully, it’ll grow into a collection of moments I’m proud of.
-          <br /><br />
-          Besides work, you can find me reading
-          , talking about Indian History, working out, and occasionally posting thoughts and memes.
-          <br /><br />
-          Feel free to look around!
-          <br /><br />
-          Suansh.</p>
 
+          I'm a passionate software engineer who enjoys transforming complex problems into simple, intuitive, and meaningful digital experiences.
+          <br /><br />
+
+          With a strong interest in both frontend and backend development, I love building products from end to end—whether it's designing user interfaces, developing scalable systems, or connecting everything in between.
+          <br /><br />
+
+          This full-stack perspective helps me create thoughtful{" "}
+          <a href="#">solutions</a> that are not only functional but also seamless and enjoyable to use.
+          <br /><br />
+
+          I'm driven by curiosity and a continuous desire to learn. You'll often find me exploring new technologies, building{" "}
+          <a href="#">projects</a>, refining my skills, and occasionally celebrating those rare moments when everything works perfectly on the first try.
+          <br /><br />
+
+          This space is where I share my work,{" "}
+          <a href="#">projects</a>, experiments, and the lessons I pick up along the way. Think of it as a growing collection of things I've{" "}
+          <a href="#">built</a>, challenges I've solved, and ideas that inspire me.
+          <br /><br />
+
+          When I'm away from the keyboard, I enjoy reading, exploring Indian history, working out, and sharing the occasional thought, observation, or meme.
+          <br /><br />
+
+          Thanks for stopping by—feel free to explore!
+          <br /><br />
+
+          Suansh.
+        </p>
       </div>
+
+      <div className="Homecontent-mobile">
+        <p>
+          Hi, I'm <a href="#">Suansh</a>.
+          <br /><br />
+
+          I build software that combines thoughtful design, solid engineering, and great user experiences.
+          <br /><br />
+
+          As a full-stack developer, I enjoy working on every part of a product—from designing interfaces and writing code to solving technical challenges behind the scenes.
+          <br /><br />
+
+          I'm always learning, experimenting, and creating <a href="#">solutions</a> that make technology more useful, accessible, and enjoyable.
+          <br /><br />
+
+          This website is a collection of my <a href="#">projects</a>, ideas, and the lessons I've picked up throughout my journey.
+          <br /><br />
+
+          When I'm not coding, you'll probably find me reading, exploring Indian history, working out, or enjoying a good meme.
+          <br /><br />
+
+          Welcome to my corner of the internet. Thanks for visiting.
+          <br /><br />
+
+          Suansh.
+        </p>
+      </div>
+
       <hr class="dotted-line" />
 
     </>

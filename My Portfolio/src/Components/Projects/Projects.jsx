@@ -3,7 +3,18 @@ import './Projects.css';
 function Projects() {
     return (<>
         <div id="scrollProgress"></div>
-        <div className="card">
+        <div className="project-index">
+            <details>
+                <summary>Index</summary>
+
+                <div className="project-links">
+                    <a href="#nutrivision">01. NutriVision</a>
+                    <a href="#project2">02. Portfolio Website</a>
+                    <a href="#project3">03. Arduino Health Monitor</a>
+                </div>
+            </details>
+        </div>
+        <div className="card" id="nutrivision">
             <h1>1. NutriVision</h1>
             <h3>Personalized Dish Recommendations based on Diabetic Retinopathy levels</h3>
             <a href="#" className='skills'>Machine Learning</a>
@@ -68,7 +79,7 @@ function Projects() {
             <a href="#" className='skills'>HTML</a>
             <a href="#" className='skills'>HTML</a>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum facere cumque voluptatibus facilis numquam error vitae molestias fugiat totam omnis nam officia quam quibusdam temporibus, magnam doloremque, exercitationem sit.
-                
+
             </p>
             <div className="Images-scroll">
                 <img src="https://picsum.photos/200/300" alt="Project 1" />
