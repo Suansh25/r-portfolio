@@ -71,7 +71,7 @@ function Contact() {
                 <a className="arrow-link" href="#home">Twitter</a>
               </li>
               <li>
-                <a className="arrow-link" href="#skills">GitHub</a>
+                <a className="arrow-link" href="https://github.com/Suansh25">GitHub</a>
               </li>
               <li>
                 <a className="arrow-link" href="#exp">LinkedIn</a>

@@ -47,7 +47,7 @@ function Home() {
           Hi, and welcome to my corner of the internet!
           <br /><br />
 
-          I'm a passionate software engineer who enjoys transforming complex problems into simple, intuitive, and meaningful digital experiences.
+          I'm a passionate software engineer who enjoys transforming problems into simple, intuitive, and meaningful digital experiences.
           <br /><br />
 
           With a strong interest in both frontend and backend development, I love building products from end to end—whether it's designing user interfaces, developing scalable systems, or connecting everything in between.

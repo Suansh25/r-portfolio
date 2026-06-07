@@ -5,7 +5,7 @@ function Footer(){
     
         <nav className='FooterBar'>
             <a class="arrow-link" href="#home">Twitter</a>
-            <a class="arrow-link" href="#skills">Github</a>
+            <a class="arrow-link" href="https://github.com/Suansh25">Github</a>
             <a class="arrow-link" href="#exp">LinkedIn</a>
             <a class="arrow-link" href="#exp">Mail</a>
             
