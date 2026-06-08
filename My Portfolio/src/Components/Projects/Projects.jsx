@@ -10,7 +10,7 @@ function Projects() {
                 <div className="project-links">
                     <a href="#project1">01. NutriVision</a>
                     <a href="#project2">02. NagaraVihari</a>
-                    <a href="#project3">03. Arduino Health Monitor</a>
+                    <a href="#project3">03. FitTrack</a>
                 </div>
             </details>
         </div>
@@ -73,7 +73,8 @@ function Projects() {
 
                     <li>Enabled reliable DR screening.</li></ul>
             </div>
-            <a href="https://github.com/Suansh25/Nutrivision" className='skills'>Github Link</a>
+            <a href="https://github.com/Suansh25/Nutrivision" target="_blank"
+                rel="noopener noreferrer" className='skills'>Github Link</a>
         </div>
 
         <hr class="dotted-line" />
@@ -144,8 +145,10 @@ function Projects() {
                     </li>
                 </ul>
             </div>
-            <a href="https://github.com/Suansh25/Nagara-vihari" className='skills'>Github Link</a>
-            <a href="https://tour-planner-9f7c7.web.app" className='skills'>Live Link</a>
+            <a href="https://github.com/Suansh25/Nagara-vihari" target="_blank"
+                rel="noopener noreferrer" className='skills'>Github Link</a>
+            <a href="https://tour-planner-9f7c7.web.app" target="_blank"
+                rel="noopener noreferrer" className='skills'>Live Link</a>
         </div>
 
         <hr class="dotted-line" />
@@ -159,20 +162,10 @@ function Projects() {
             <a href="#" className='skills'>Tracking</a>
 
 
-            <div className="desktop-text">FitTrack is a machine learning powered health analytics web application that predicts exercise calorie burn and daily calorie requirements using physiological data such as age, weight, height, heart rate, exercise duration, and body temperature.
-
-                The application is built using Python and Streamlit and utilizes an ensemble machine learning model combining XGBoost, LightGBM, and CatBoost to generate accurate calorie burn predictions.
-
-                For model transparency and interpretability, the application integrates SHAP (SHapley Additive Explanations), allowing users to visualize and understand which physiological factors most influence calorie burn predictions.
-
-                Additionally, FitTrack includes a nutrition logging system based on an Indian food nutrition dataset, enabling users to track daily intake of calories, protein, carbohydrates, and fat.
-
-                Interactive dashboards display daily calorie progress, remaining calorie targets, and macro nutrient distribution, helping users effectively monitor their diet and exercise impact.
-
-                Overall, FitTrack provides a comprehensive and interactive platform for users to track physical activity, manage nutrition intake, and gain insights into the physiological factors influencing their calorie expenditure.
+            <div className="desktop-text">FitTrack is a machine learning-powered health analytics web application that predicts exercise calorie burn and daily calorie requirements using physiological data. Built with Python and Streamlit, it uses an ensemble of XGBoost, LightGBM, and CatBoost models with SHAP-based explainability. The platform also includes nutrition tracking, interactive dashboards, and calorie/macro monitoring features.
             </div>
             <div className='mobile-text'>
-                FitTrack provides a comprehensive and interactive platform for users to track physical activity, manage nutrition intake, and gain insights into the physiological factors influencing their calorie expenditure
+                FitTrack is a machine learning-powered health analytics web application that predicts exercise calorie burn and daily calorie requirements using physiological data. Built with Python and Streamlit, it uses an ensemble of XGBoost, LightGBM, and CatBoost models with SHAP-based explainability. The platform also includes nutrition tracking, interactive dashboards, and calorie/macro monitoring features.
             </div>
             <h3>Objectives :</h3>
             <div className='desktop-text'> <ul>
@@ -195,37 +188,37 @@ function Projects() {
             </div>
 
             <div className="Images-scroll">
-                <img src="/Images/NagaraVihari/NV home.png" alt="Home page of NagaraVihari" />
-                <img src="/Images/NagaraVihari/NV Osm.png" alt="OSM Maps" />
-                <img src="/Images/NagaraVihari/NV Destinations.png" alt="Destinations" />
-                <img src="/Images/NagaraVihari/NV Badges.png" alt="Badges" />
-                <img src="/Images/NagaraVihari/NV details.png" alt="Locations Details" />
-
-
+                <img src="/Images/FitTrack/Main.png" alt="Home page" />
+                <img src="/Images/FitTrack/Insights.png" alt="Insights" />
+                <img src="/Images/FitTrack/progress.png" alt="Progress" />
+                <img src="/Images/FitTrack/food.png" alt="food" />
             </div>
             <h3>Results :</h3>
             <div className='desktop-text'>
                 <ul>
-                    <li>Users receive tasks or challenges to visit specific locations in the city.After visiting, users upload pictures as proof and earn score points.
+                    <li>Developed FitTrack, a health analytics web application using Python and Streamlit to predict calorie burn and daily calorie requirements from physiological data.
                     </li>
-                    <li>Users with the highest scores rank on the leaderboard. Friendly competition encourages regular exploration.
+                    <li>Implemented an ensemble machine learning model combining XGBoost, LightGBM, and CatBoost, with SHAP explainability for transparent prediction insights.
                     </li>
-                    <li>When visiting a place, users can input a budget. The app will suggest:Nearby famous foods,Fun activities or shops,Experiences that fit within their budget
+                    <li>Integrated nutrition tracking and interactive dashboards to monitor calorie intake, macronutrients, exercise impact, and fitness progress.
                     </li>
 
                 </ul>
             </div>
             <div className='mobile-text'>
-                <ul><li>Users receive tasks or challenges to visit specific locations in the city.After visiting, users upload pictures as proof and earn score points.
-                </li>
-                    <li>Users with the highest scores rank on the leaderboard. Friendly competition encourages regular exploration.
+                <ul>
+                    <li>Developed FitTrack, a health analytics web application using Python and Streamlit to predict calorie burn and daily calorie requirements from physiological data.
                     </li>
-                    <li>When visiting a place, users can input a budget. The app will suggest:Nearby famous foods,Fun activities or shops,Experiences that fit within their budget
+                    <li>Implemented an ensemble machine learning model combining XGBoost, LightGBM, and CatBoost, with SHAP explainability for transparent prediction insights.
                     </li>
+                    <li>Integrated nutrition tracking and interactive dashboards to monitor calorie intake, macronutrients, exercise impact, and fitness progress.
+                    </li>
+
                 </ul>
             </div>
-            <a href="https://github.com/Suansh25/Nagara-vihari" className='skills'>Github Link</a>
-            <a href="https://tour-planner-9f7c7.web.app" className='skills'>Live Link</a>
+            <a href="https://github.com/Suansh25/FitTrack" target="_blank"
+                rel="noopener noreferrer" className='skills'>Github Link</a>
+
         </div>
         <hr class="dotted-line" />
     </>)

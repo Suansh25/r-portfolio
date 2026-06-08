@@ -12,7 +12,7 @@ function Contact() {
     return () => clearInterval(timer);
   }, []);
   return (<>
-     <div id="scrollProgress"></div>
+    <div id="scrollProgress"></div>
     <section class="contact-section">
       {/* <div class="contact-container">
     <h1 class="contact-name">Suansh K.</h1>
@@ -45,7 +45,7 @@ function Contact() {
 
         <div className="contentforcontact">
           <p><h2>Intro</h2>
-            Hi, I'm Suansh 👋. I recently graduated with a B.Tech in Computer Science and Business Systems, and I'm passionate about building technology that solves real-world problems. I enjoy creating user-friendly, responsive web applications that provide seamless experiences while balancing both technical excellence and business needs.
+            Hi, I'm Suansh 👋. I am a graduate with a B.Tech degree in Computer Science and Business Systems, I'm passionate about building technology that solves real-world problems. I enjoy creating user-friendly, responsive web applications that provide seamless experiences while balancing both technical excellence and business needs.
           </p>
 
           <p><h2>Experience</h2>
@@ -68,16 +68,20 @@ function Contact() {
             <h2>My Socials:</h2>
             <ul className="social-links">
               <li>
-                <a className="arrow-link" href="#home">Twitter</a>
+                <a className="arrow-link" href="#home" target="_blank"
+                  rel="noopener noreferrer">Twitter</a>
               </li>
               <li>
-                <a className="arrow-link" href="https://github.com/Suansh25">GitHub</a>
+                <a className="arrow-link" href="https://github.com/Suansh25" target="_blank"
+                  rel="noopener noreferrer">GitHub</a>
               </li>
               <li>
-                <a className="arrow-link" href="#exp">LinkedIn</a>
+                <a className="arrow-link" href="#exp" target="_blank"
+                  rel="noopener noreferrer">LinkedIn</a>
               </li>
               <li>
-                <a className="arrow-link" href="#mail">Mail</a>
+                <a className="arrow-link" href="#mail" target="_blank"
+                  rel="noopener noreferrer">Mail</a>
               </li>
             </ul>
           </p>
