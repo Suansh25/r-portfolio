@@ -1,41 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-:root{
-    --bg-color :#040404;
-    --gray: #F2F1F2;
-    --purple:#95A1F9;
-  }
  html {
   scroll-behavior: smooth;
 }
-.card{
-   
+.card {
     align-items: left;
     text-align: left;
-    
+  /* background: rgba(var(--purple-rgb), 0.02);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(var(--purple-rgb), 0.02);
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08); */
+
+}
+.card {
+  position: relative;
+  overflow: hidden;
+   /* padding: clamp(0px, 3vw, 28px); */
+}
+
+.card-number{
+   font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--purple);
+  text-transform: uppercase;
+  margin-bottom: 0.1rem;
+  opacity: 0.75;
+  font-family: "Noto Sans", sans-serif;
+}
+.card h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--gray);
+  margin-bottom: 0.3rem;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
 }
 .card h3,a{
   font-family: "Doto", sans-serif;
+  
+  
 }
-.card p{
-    display: flex;
-  text-align: left;
-  font-family: "Noto Sans", sans-serif;
-  justify-content: space-between;
-  align-items: center;
+.section-label {
+  font-size: 0.92rem;
+  font-weight: 1000;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray);
+  opacity: 0.7;
+  margin-bottom: 0.65rem;
+  margin-top: 1.5rem;
+  
+}
+.card-subtitle {
+  font-size: 0.95rem;
+  color: var(--gray);
+  font-weight: 1000;
+  margin-bottom: 1.25rem;
+ 
 }
 .mobile-text {
- 
-  display: none;
+    display: none;
 }
-.card ul li::marker{
+.desktop-text{
+  font-size: 0.92rem;
+  line-height: 1.8;
+  
+  margin-bottom: 1.5rem;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+ 
+.card ul li {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  padding-left: 1.2rem;
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+}
+ 
+.card ul li::before {
+  content: '▸';
   color: var(--purple);
+  position: absolute;
+  left: 0;
+  font-size: 0.72rem;
+  top: 3px;
 }
 .skills {
     text-decoration: none;
-
-    font-weight: 5000;
     color: var(--gray);
     border: 2px solid var(--purple);
     border-radius: 5px;
@@ -46,9 +117,37 @@
     margin-right: 15px; 
     margin-bottom: 5px;
     display: inline-block; 
-    background-color: var(--bg-color);
-    
+    font-size: 0.78rem;
+    font-weight: 500;
+    background: var(--purple-dim);
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
   }
+  .skills:hover {
+  background: rgba(149, 161, 249, 0.2);
+  border-color: var(--purple);
+  transform: translateY(-2px);
+}
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+ 
+.result-card {
+  background: rgba(var(--purple-rgb), 0.05);
+  border: 1px solid rgba(var(--purple-rgb), 0.15);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  font-family: "Noto Sans", sans-serif;
+}
+ 
+.result-card strong {
+  color: var(--purple);
+  font-weight: 600;
+}
   .Images-scroll {
   display: flex;
   gap: 15px;
@@ -79,19 +178,10 @@
 .Images-scroll {
   scrollbar-width: none;
 }
-[data-rmiz-modal-overlay="visible"] {
-  background-color: var(--purple) !important;
-}
 
-[data-rmiz-btn-unzoom] {
-  color: var(--purple) !important;
-  background: var(--bg-color )!important;
-  border-radius: 50%;
-  padding: 8px;
-}
 .project-index {
   text-align: left;
-  padding-left: 15px;
+  
 }
 
 .project-index summary {
@@ -114,6 +204,7 @@
 
 .project-index details[open] summary::after {
   content: "−";
+   transition: 0.9s smooth;
 }
 
 .project-links {
@@ -121,6 +212,10 @@
   flex-direction: column;
   gap: 12px;
   margin-top: 10px;
+  font-size: 1.17em; 
+  font-weight: 1000;
+  color: var(--gray2);
+  margin-bottom: 1.25rem;
   padding-left: 15px;
   border-left: 2px solid var(--purple);
 }
@@ -147,6 +242,11 @@
   }
     .mobile-text {
     display: block;
+    font-size: 0.92rem;
+  line-height: 1.8;
+ 
+  margin-bottom: 1.5rem;
+    
   }
 
   .desktop-text {
@@ -183,14 +283,13 @@
 .Images-scroll > * {
   flex-shrink: 0;
 }
-[data-rmiz-modal-overlay="visible"] {
-  background-color: var(--purple) !important;
-}
 
-[data-rmiz-btn-unzoom] {
-  color: var(--purple) !important;
-  background: var(--bg-color )!important;
-  border-radius: 50%;
-  padding: 8px;
-}
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-card {
+    padding: 0.9rem;
+  }
 }

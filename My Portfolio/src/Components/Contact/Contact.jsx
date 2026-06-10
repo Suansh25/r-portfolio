@@ -14,13 +14,11 @@ function Contact() {
   return (<>
     <div id="scrollProgress"></div>
     <section class="contact-section">
-      {/* <div class="contact-container">
-    <h1 class="contact-name">Suansh K.</h1>
-    <p class="contact-subtext">Let's connect and build something amazing together.</p>
-  </div> */}
+      
       <div className="titleforcontact">
         <h1>Suansh K </h1>
-        <h2><span>Let's connect and build something amazing together.</span></h2>
+        <h2 className='t2'><span>Let's connect and build something amazing together.</span></h2>
+        <div className="title">
         <p>{currentDate.toDateString()}</p>
 
         {(() => {
@@ -42,26 +40,27 @@ function Contact() {
 
           return <p><i>{todaysLine}</i></p>;
         })()}
+        </div>
 
         <div className="contentforcontact">
-          <p><h2>Intro</h2>
+          <p className='contentforcontact-p'><h2>Intro</h2>
             Hi, I'm Suansh 👋. I am a graduate with a B.Tech degree in Computer Science and Business Systems, I'm passionate about building technology that solves real-world problems. I enjoy creating user-friendly, responsive web applications that provide seamless experiences while balancing both technical excellence and business needs.
           </p>
 
-          <p><h2>Experience</h2>
+          <p className='contentforcontact-p'><h2>Experience</h2>
             My academic background has given me a strong foundation in software development, data analysis, databases, and problem-solving. I am comfortable working with technologies such as Python, Java, JavaScript, SQL, C, and C++, and I continuously explore new tools and frameworks to expand my skill set.
           </p>
 
-          <p>
+          <p className='contentforcontact-p'>
             <h2>Engaged in</h2>
             Currently, I'm deepening my knowledge of the MERN Stack (MongoDB, Express.js, React, and Node.js) to build modern full-stack applications. At the same time, I'm learning Kotlin and Android development to create mobile applications and better understand the mobile ecosystem.
           </p>
 
-          <p><h2>Propensity</h2>
+          <p className='contentforcontact-p'><h2>Propensity</h2>
             Beyond coding, I enjoy learning about emerging technologies, exploring innovative project ideas, and improving my development practices. I believe in continuous learning, collaboration, and building solutions that make a meaningful impact on users and businesses alike.
           </p>
 
-          <p><h2>Aspiration</h2>
+          <p className='contentforcontact-p'><h2>Aspiration</h2>
             As a recent graduate, I am actively seeking opportunities where I can contribute, grow as a software developer, and work alongside talented teams. I'm excited about turning ideas into products and continuously evolving as a technology professional.
           </p>
           <p>

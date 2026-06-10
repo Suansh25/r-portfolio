@@ -8,15 +8,16 @@ function Projects() {
                 <summary>Index</summary>
 
                 <div className="project-links">
-                    <a href="#project1">01. NutriVision</a>
+                    <a href="#project1" >01. NutriVision</a>
                     <a href="#project2">02. NagaraVihari</a>
                     <a href="#project3">03. FitTrack</a>
                 </div>
             </details>
         </div>
         <div className="card" id="project1">
-            <h1>1. NutriVision</h1>
-            <h3>Personalized Dish Recommendations based on Diabetic Retinopathy levels</h3>
+           
+            <h1>  <h2 className='card-number'>01</h2>NutriVision</h1>
+            <h3 className='card-subtitle'>Personalized Dish Recommendations based on Diabetic Retinopathy levels</h3>
             <a href="#" className='skills'>Machine Learning</a>
             <a href="#" className='skills'>NLP</a>
             <a href="#" className='skills'>ReactJS</a>
@@ -27,7 +28,7 @@ function Projects() {
             <div className='mobile-text'>
                 A ReactJS web application that detects Diabetic Retinopathy using machine learning and recommends suitable dishes based on the user's condition.
             </div>
-            <h3>Objectives :</h3>
+            <h3 className='section-label'>Objectives :</h3>
             <div className='desktop-text'> <ul>
                 <li>To detect the stage of Diabetic Retinopathy from user-submitted retinal images using deep learning techniques (using preprocessing), Feature detection and analysis</li>
                 <li>To extract key visual features and severity levels from the detected DR stage and use this clinical insight to influence personalized nutritional recommendations tailored to diabetic User’s health needs.
@@ -51,7 +52,12 @@ function Projects() {
 
                 <img src="/Images/NutriVision/Architecture diagram.png" alt="Architecture Diagram" />
             </div>
-            <h3>Results :</h3>
+            <h3 className='section-label'>Results :</h3>
+             <div className="results-grid">
+                        <div className="result-card">Built with Python + Streamlit to predict calorie burn and daily requirements from physiological data.</div>
+                        <div className="result-card">Ensemble of XGBoost, LightGBM & CatBoost with SHAP for transparent prediction insights.</div>
+                        <div className="result-card">Interactive dashboards monitor calorie intake, macronutrients, exercise impact, and fitness progress.</div>
+                    </div>
             <div className='desktop-text'>
                 <ul>
                     <li>The comparative analysis reveals that the proposed SMOTE-XGBoost-LBP model achieves the highest performance among all evaluated approaches, with an overall accuracy of 94%.
@@ -73,7 +79,7 @@ function Projects() {
 
                     <li>Enabled reliable DR screening.</li></ul>
             </div>
-            <a href="https://github.com/Suansh25/Nutrivision" target="_blank"
+            <a   className="github-link" href="https://github.com/Suansh25/Nutrivision" target="_blank"
                 rel="noopener noreferrer" className='skills'>Github Link</a>
         </div>
 
@@ -81,8 +87,8 @@ function Projects() {
 
 
         <div className="card" id="project2">
-            <h1>2. NagaraVihari</h1>
-            <h3>Explore Your City Like a Game!</h3>
+            <h1> <h2 className='card-number'>02</h2> NagaraVihari</h1>
+            <h3 className='card-subtitle'>Explore Your City Like a Game!</h3>
             <a href="#" className='skills'>ReactJs</a>
             <a href="#" className='skills'>UI/UX</a>
             <a href="#" className='skills'>Travel</a>
@@ -95,7 +101,7 @@ function Projects() {
             <div className='mobile-text'>
                 NagaraVihari is an interactive and gamified tour-planning website designed to encourage people—especially teenagers and middle-aged individuals—to explore historical, cultural, and modern landmarks in cities like Hyderabad.
             </div>
-            <h3>Objectives :</h3>
+            <h3 className='section-label'>Objectives :</h3>
             <div className='desktop-text'> <ul>
                 <li>Assigns users missions to visit tourist/historic spots.</li>
                 <li>Rewards users with points and badges for uploading images from their visits.
@@ -124,7 +130,7 @@ function Projects() {
 
 
             </div>
-            <h3>Results :</h3>
+            <h3 className='section-label'>Results :</h3>
             <div className='desktop-text'>
                 <ul>
                     <li>Users receive tasks or challenges to visit specific locations in the city.After visiting, users upload pictures as proof and earn score points.
@@ -145,17 +151,16 @@ function Projects() {
                     </li>
                 </ul>
             </div>
-            <a href="https://github.com/Suansh25/Nagara-vihari" target="_blank"
+            <a   className="github-link" href="https://github.com/Suansh25/Nagara-vihari" target="_blank"
                 rel="noopener noreferrer" className='skills'>Github Link</a>
-            <a href="https://tour-planner-9f7c7.web.app" target="_blank"
-                rel="noopener noreferrer" className='skills'>Live Link</a>
+            
         </div>
 
         <hr class="dotted-line" />
 
         <div className="card" id="project3">
-            <h1>3. FitTrack</h1>
-            <h3>Predictive Modelling of Daily Calorie Requirements using User Physiological Data</h3>
+            <h1><h2 className='card-number'>03</h2>FitTrack</h1>
+            <h3 className='card-subtitle'>Predictive Modelling of Daily Calorie Requirements using User Physiological Data</h3>
             <a href="#" className='skills'>Machine Learning</a>
             <a href="#" className='skills'>Python</a>
             <a href="#" className='skills'>Fitness</a>
@@ -167,7 +172,7 @@ function Projects() {
             <div className='mobile-text'>
                 FitTrack is a machine learning-powered health analytics web application that predicts exercise calorie burn and daily calorie requirements using physiological data. Built with Python and Streamlit, it uses an ensemble of XGBoost, LightGBM, and CatBoost models with SHAP-based explainability. The platform also includes nutrition tracking, interactive dashboards, and calorie/macro monitoring features.
             </div>
-            <h3>Objectives :</h3>
+            <h3 className='section-label'>Objectives :</h3>
             <div className='desktop-text'> <ul>
                 <li>Assigns users missions to visit tourist/historic spots.</li>
                 <li>Rewards users with points and badges for uploading images from their visits.
@@ -193,7 +198,7 @@ function Projects() {
                 <img src="/Images/FitTrack/progress.png" alt="Progress" />
                 <img src="/Images/FitTrack/food.png" alt="food" />
             </div>
-            <h3>Results :</h3>
+            <h3 className='section-label'>Results :</h3>
             <div className='desktop-text'>
                 <ul>
                     <li>Developed FitTrack, a health analytics web application using Python and Streamlit to predict calorie burn and daily calorie requirements from physiological data.
@@ -216,7 +221,7 @@ function Projects() {
 
                 </ul>
             </div>
-            <a href="https://github.com/Suansh25/FitTrack" target="_blank"
+            <a   className="github-link" href="https://github.com/Suansh25/FitTrack" target="_blank"
                 rel="noopener noreferrer" className='skills'>Github Link</a>
 
         </div>

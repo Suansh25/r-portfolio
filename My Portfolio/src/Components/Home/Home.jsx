@@ -18,7 +18,7 @@ function Home() {
       <div id="scrollProgress"></div>
       <div className="title">
         <h1>Greetings, <span>I'm Suansh!</span></h1>
-        <p>{currentDate.toDateString()}</p>
+        <p className='dt'>{currentDate.toDateString()}</p>
 
         {(() => {
           const poeticLines = [

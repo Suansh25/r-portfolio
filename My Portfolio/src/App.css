@@ -10,6 +10,7 @@
   --gray: #000000;
   --purple: #767778e7;
   --gray2: #ce12125e;
+  --purple-rgb: 149, 161, 249;
 }
 .container{
   width: 700px;            
