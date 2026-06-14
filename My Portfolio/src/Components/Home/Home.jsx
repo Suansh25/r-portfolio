@@ -1,6 +1,9 @@
 import './Home.css';
 import { useState, useEffect } from 'react';
 import './Home.js';
+
+import Contact from '../Contact/Contact.jsx';
+import Project from '../Projects/Projects';
 function Home() {
   const [currentDate, setCurrentDate] = useState(new Date());
 
@@ -53,17 +56,15 @@ function Home() {
           With a strong interest in both frontend and backend development, I love building products from end to end—whether it's designing user interfaces, developing scalable systems, or connecting everything in between.
           <br /><br />
 
-          This full-stack perspective helps me create thoughtful{" "}
-          <a href="#">solutions</a> that are not only functional but also seamless and enjoyable to use.
+          This full-stack perspective helps me create thoughtful solutions that are not only functional but also seamless and enjoyable to use.
           <br /><br />
 
-          I'm driven by curiosity and a continuous desire to learn. You'll often find me exploring new technologies, building{" "}
-          <a href="#">projects</a>, refining my skills, and occasionally celebrating those rare moments when everything works perfectly on the first try.
+          I'm driven by curiosity and a continuous desire to learn. You'll often find me exploring new technologies, building         projects, refining my skills, and occasionally celebrating those rare moments when everything works perfectly on the first try.
           <br /><br />
 
-          This space is where I share my work,{" "}
-          <a href="#">projects</a>, experiments, and the lessons I pick up along the way. Think of it as a growing collection of things I've{" "}
-          <a href="#">built</a>, challenges I've solved, and ideas that inspire me.
+          This space is where I share my work
+          projects, experiments, and the lessons I pick up along the way. Think of it as a growing collection of things I've
+          built, challenges I've solved, and ideas that inspire me.
           <br /><br />
 
           When I'm away from the keyboard, I enjoy reading, exploring Indian history, working out, and sharing the occasional thought, observation, or meme.
@@ -78,7 +79,7 @@ function Home() {
 
       <div className="Homecontent-mobile">
         <p>
-          Hi, I'm <a href="#">Suansh</a>.
+          Hi, I'm Suansh.
           <br /><br />
 
           I build software that combines thoughtful design, solid engineering, and great user experiences.
@@ -87,10 +88,10 @@ function Home() {
           As a full-stack developer, I enjoy working on every part of a product—from designing interfaces and writing code to solving technical challenges behind the scenes.
           <br /><br />
 
-          I'm always learning, experimenting, and creating <a href="#">solutions</a> that make technology more useful, accessible, and enjoyable.
+          I'm always learning, experimenting, and creating solutions that make technology more useful, accessible, and enjoyable.
           <br /><br />
 
-          This website is a collection of my <a href="#">projects</a>, ideas, and the lessons I've picked up throughout my journey.
+          This website is a collection of my projects, ideas, and the lessons I've picked up throughout my journey.
           <br /><br />
 
           When I'm not coding, you'll probably find me reading, exploring Indian history, working out, or enjoying a good meme.
