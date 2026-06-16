@@ -53,7 +53,7 @@ function Contact() {
 
           <p className='contentforcontact-p'>
             <h2>Engaged in</h2>
-            Currently, I'm deepening my knowledge of the MERN Stack (MongoDB, Express.js, React, and Node.js) to build modern full-stack applications. At the same time, I'm learning Kotlin and Android development to create mobile applications and better understand the mobile ecosystem.
+            Currently, I'm deepening my knowledge of the MERN Stack (MongoDB, Expressjs, React, and Nodejs) to build modern full-stack applications. At the same time, I'm learning Kotlin and Android development to create mobile applications and better understand the mobile ecosystem.
           </p>
 
           <p className='contentforcontact-p'><h2>Propensity</h2>
