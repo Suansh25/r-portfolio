@@ -62,7 +62,7 @@
 .FooterBar a {
   margin-left: 0;  
   text-decoration: none;
-  color: var(--gray2);
+  color: var(--gray);
   font-weight: 1000;
   margin-right: 1.5rem;
   transition: color 0.3s ease;
