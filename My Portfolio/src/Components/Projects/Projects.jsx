@@ -54,9 +54,10 @@ function Projects() {
             </div>
             <h3 className='section-label'>Results :</h3>
              <div className="results-grid">
-                        <div className="result-card">Built with Python + Streamlit to predict calorie burn and daily requirements from physiological data.</div>
+                        <div className="result-card">Built with ReactJS to predict calorie burn and daily requirements from physiological data.</div>
                         <div className="result-card">Ensemble of XGBoost, LightGBM & CatBoost with SHAP for transparent prediction insights.</div>
                         <div className="result-card">Interactive dashboards monitor calorie intake, macronutrients, exercise impact, and fitness progress.</div>
+                        <div className="result-card">I.</div>
                     </div>
             <div className='desktop-text'>
                 <ul>
