@@ -15,7 +15,7 @@ function Projects() {
             </details>
         </div>
         <div className="card" id="project1">
-           
+
             <h1>  <h2 className='card-number'>01</h2>NutriVision</h1>
             <h3 className='card-subtitle'>Personalized Dish Recommendations based on Diabetic Retinopathy levels</h3>
             <a href="#" className='skills'>Machine Learning</a>
@@ -53,12 +53,16 @@ function Projects() {
                 <img src="/Images/NutriVision/Architecture diagram.png" alt="Architecture Diagram" />
             </div>
             <h3 className='section-label'>Results :</h3>
-             <div className="results-grid">
-                        <div className="result-card">Built with ReactJS to predict calorie burn and daily requirements from physiological data.</div>
-                        <div className="result-card">Ensemble of XGBoost, LightGBM & CatBoost with SHAP for transparent prediction insights.</div>
-                        <div className="result-card">Interactive dashboards monitor calorie intake, macronutrients, exercise impact, and fitness progress.</div>
-                        <div className="result-card">I.</div>
-                    </div>
+            <div className="results-grid">
+                <div className="result-card">Enhanced Image quality through Preprocessing: This helps in accurate feature extraction,especially in real world images affected by noise,blur,or uneven lighting.
+                </div>
+                <div className="result-card">Improved Accuracy with XGBoost: The Integration of the XGBoost Classifier led to high diagnostic accuracy and robust differentiation between DR stages.
+                </div>
+                <div className="result-card">Practical adaptability: The system’s ability to handle various images and data has made it suitable for resource limited settings such as in a restaurants.
+                </div>
+                <div className="result-card">Integrated Nutrition analysis:Unlike Traditional models, Nutrivision extends functionality by offering personalized dietary guidance based on DR stage.
+                </div>
+            </div>
             <div className='desktop-text'>
                 <ul>
                     <li>The comparative analysis reveals that the proposed SMOTE-XGBoost-LBP model achieves the highest performance among all evaluated approaches, with an overall accuracy of 94%.
@@ -80,7 +84,7 @@ function Projects() {
 
                     <li>Enabled reliable DR screening.</li></ul>
             </div>
-            <a   className="github-link" href="https://github.com/Suansh25/Nutrivision" target="_blank"
+            <a className="github-link" href="https://github.com/Suansh25/Nutrivision" target="_blank"
                 rel="noopener noreferrer" className='skills'>Github Link</a>
         </div>
 
@@ -152,9 +156,9 @@ function Projects() {
                     </li>
                 </ul>
             </div>
-            <a   className="github-link" href="https://github.com/Suansh25/Nagara-vihari" target="_blank"
+            <a className="github-link" href="https://github.com/Suansh25/Nagara-vihari" target="_blank"
                 rel="noopener noreferrer" className='skills'>Github Link</a>
-            
+
         </div>
 
         <hr class="dotted-line" />
@@ -200,6 +204,20 @@ function Projects() {
                 <img src="/Images/FitTrack/food.png" alt="food" />
             </div>
             <h3 className='section-label'>Results :</h3>
+            <div className="results-grid">
+                <div className="result-card">This helps provide calorie estimation and tracking to the end user without the use proprietary or subscription software.
+
+                </div>
+                <div className="result-card">Unlike basic BMI based calculators that only use weight and time, this work incorporates bio-markers like Heart Rate and Body Temperature.
+
+                </div>
+                <div className="result-card">This Project integrates a specialized dataset of Indian Food Nutrition, allowing users to log specific Indian food items like Dal, Roti, and Paneer etc.
+
+                </div>
+                <div className="result-card">Inclusion of Indian demography food items helps in providing better food results for India specific population.
+
+                </div>
+            </div>
             <div className='desktop-text'>
                 <ul>
                     <li>Developed FitTrack, a health analytics web application using Python and Streamlit to predict calorie burn and daily calorie requirements from physiological data.
@@ -222,7 +240,7 @@ function Projects() {
 
                 </ul>
             </div>
-            <a   className="github-link" href="https://github.com/Suansh25/FitTrack" target="_blank"
+            <a className="github-link" href="https://github.com/Suansh25/FitTrack" target="_blank"
                 rel="noopener noreferrer" className='skills'>Github Link</a>
 
         </div>

@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
  html {
@@ -135,8 +136,8 @@
 }
  
 .result-card {
-  background: rgba(var(--purple-rgb), 0.05);
-  border: 1px solid rgba(var(--purple-rgb), 0.15);
+ background-color: color-mix(in srgb, var(--purple) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--gray2) 5%, transparent);
   border-radius: 8px;
   padding: 0.85rem 1rem;
   font-size: 0.82rem;
@@ -212,9 +213,9 @@
   flex-direction: column;
   gap: 12px;
   margin-top: 10px;
-  font-size: 1.17em; 
+  font-size: 0.92em; 
   font-weight: 1000;
-  color: var(--gray2);
+  color: var(--gray);
   margin-bottom: 1.25rem;
   padding-left: 15px;
   border-left: 2px solid var(--purple);
