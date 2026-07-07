@@ -138,13 +138,13 @@ function Projects() {
             <h3 className='section-label'>Results :</h3>
         
             <div className="results-grid">
-                <div className="result-card">Gamified Experience for the Users.
+                <div className="result-card">Gamified Experience for the Users, This helps in making the interaction with the website more intuitive.
                 </div>
-                <div className="result-card">Competition based Challenges.
+                <div className="result-card">Competition based Challenges.This helps promote a need for growing more points by completing the challenges.
                 </div>
-                <div className="result-card">Budgets are taken into consideration.
+                <div className="result-card">Budgets are taken into consideration. This ensures entertainment within the given limits.
                 </div>
-                <div className="result-card">Famous food and local experiences are recommended.
+                <div className="result-card">Famous food and local experiences are recommended. This helps customize the experiences based on the locations.
                 </div>
             </div>
             <div className='desktop-text'>
