@@ -136,6 +136,17 @@ function Projects() {
 
             </div>
             <h3 className='section-label'>Results :</h3>
+        
+            <div className="results-grid">
+                <div className="result-card">Gamified Experience for the Users.
+                </div>
+                <div className="result-card">Competition based Challenges.
+                </div>
+                <div className="result-card">Budgets are taken into consideration.
+                </div>
+                <div className="result-card">Famous food and local experiences are recommended.
+                </div>
+            </div>
             <div className='desktop-text'>
                 <ul>
                     <li>Users receive tasks or challenges to visit specific locations in the city.After visiting, users upload pictures as proof and earn score points.
