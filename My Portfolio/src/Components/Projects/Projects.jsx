@@ -161,7 +161,7 @@ function Projects() {
             <div className='mobile-text'>
                 <ul><li>Users receive tasks or challenges to visit specific locations in the city.After visiting, users upload pictures as proof and earn score points.
                 </li>
-                    <li>Users with the highest scores rank on the leaderboard. Friendly competition encourages regular exploration.
+                    <li>Users ranked on the leaderboard.This Friendly competition encourages regular exploration.
                     </li>
                     <li>When visiting a place, users can input a budget. The app will suggest:Nearby famous foods,Fun activities or shops,Experiences that fit within their budget
                     </li>
