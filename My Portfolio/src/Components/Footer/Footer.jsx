@@ -8,7 +8,7 @@ function Footer() {
                     rel="noopener noreferrer">Twitter</a>
                 <a class="arrow-link" href="https://github.com/Suansh25" target="_blank"
                     rel="noopener noreferrer">Github</a>
-                <a class="arrow-link" href="#exp" target="_blank"
+                <a class="arrow-link" href="https://www.linkedin.com/in/suansh-k-aa090b299" target="_blank"
                     rel="noopener noreferrer">LinkedIn</a>
                 <a class="arrow-link" href="#exp" target="_blank"
                     rel="noopener noreferrer">Mail</a>
