@@ -67,7 +67,7 @@ function Contact() {
             <h2>My Socials:</h2>
             <ul className="social-links">
               <li>
-                <a className="arrow-link" href="#home" target="_blank"
+                <a className="arrow-link" href="https://x.com/SuanshK" target="_blank"
                   rel="noopener noreferrer">Twitter</a>
               </li>
               <li>
@@ -79,8 +79,7 @@ function Contact() {
                   rel="noopener noreferrer">LinkedIn</a>
               </li>
               <li>
-                <a className="arrow-link" href="#mail" target="_blank"
-                  rel="noopener noreferrer">Mail</a>
+                <a className="arrow-link" href="mailto:suanshkurakula25@gmail.com">Mail</a>
               </li>
             </ul>
           </p>
