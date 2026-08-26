@@ -66,20 +66,22 @@ function Contact() {
           <p>
             <h2>My Socials:</h2>
             <ul className="social-links">
+               <li>
+                <a className="arrow-link" href="https://github.com/Suansh25" target="_blank"
+                  rel="noopener noreferrer">Connect on GitHub</a>
+              </li>
+              <li>
+                <a className="arrow-link" href="https://www.linkedin.com/in/suansh-k-aa090b299" target="_blank"
+                  rel="noopener noreferrer">Connect on LinkedIn</a>
+              </li>
+              
               <li>
                 <a className="arrow-link" href="https://x.com/SuanshK" target="_blank"
-                  rel="noopener noreferrer">Twitter</a>
+                  rel="noopener noreferrer">Connect on X</a>
               </li>
               <li>
-                <a className="arrow-link" href="https://github.com/Suansh25" target="_blank"
-                  rel="noopener noreferrer">GitHub</a>
-              </li>
-              <li>
-                <a className="arrow-link" href="#exp" target="_blank"
-                  rel="noopener noreferrer">LinkedIn</a>
-              </li>
-              <li>
-                <a className="arrow-link" href="mailto:suanshkurakula25@gmail.com">Mail</a>
+                <a className="mail"  target="_blank"
+                  rel="noopener noreferrer">suanshkurakula25@gmail.com</a>
               </li>
             </ul>
           </p>

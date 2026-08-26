@@ -69,7 +69,16 @@ body {
   line-height: 1.8;
   font-size: 0.92rem;
 }
-
+.mail{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--purple);
+  padding-right: 15px; 
+  border-radius: 6px;
+  padding: 0px 8px;
+  cursor: default; 
+}
 .content p {
   margin: 0;
  font-size: 0.92rem;
