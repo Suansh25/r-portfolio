@@ -59,13 +59,15 @@ function Home() {
           This full-stack perspective helps me create thoughtful solutions that are not only functional but also seamless and enjoyable to use.
           <br /><br />
 
-          I'm driven by curiosity and a continuous desire to learn. You'll often find me exploring new technologies, building         projects, refining my skills, and occasionally celebrating those rare moments when everything works perfectly on the first try.
+          My background in Computer Science has given me a strong foundation in software development, data analysis, databases, and problem-solving. I'm comfortable working with Python, Java, JavaScript, SQL, C, and C++, while continuously exploring new technologies and frameworks to expand my skills.
           <br /><br />
 
-          This space is where I share my work
-          projects, experiments, and the lessons I pick up along the way. Think of it as a growing collection of things I've
-          built, challenges I've solved, and ideas that inspire me.
+          Currently, I'm deepening my knowledge of the MERN Stack—MongoDB, Express.js, React, and Node.js—to build modern full-stack applications. I'm also learning Kotlin and Android development to explore mobile application development and gain a broader understanding of the software ecosystem.
+
+          Beyond coding, I enjoy exploring emerging technologies, experimenting with new project ideas, and continuously improving my development practices. I believe in learning through building, collaborating with others, and creating solutions that provide meaningful value to both users and businesses.
           <br /><br />
+
+          As a recent graduate, I'm actively looking for opportunities where I can contribute, grow as a software developer, and work alongside talented teams. I'm excited about turning ideas into practical products and continuously evolving as a developer.
 
           When I'm away from the keyboard, I enjoy reading, exploring Indian history, working out, and sharing the occasional thought, observation, or meme.
           <br /><br />
