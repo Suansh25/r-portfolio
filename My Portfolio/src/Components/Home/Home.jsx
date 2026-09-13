@@ -62,7 +62,7 @@ function Home() {
           My background in Computer Science has given me a strong foundation in software development, data analysis, databases, and problem-solving. I'm comfortable working with Python, Java, JavaScript, SQL, C, and C++, while continuously exploring new technologies and frameworks to expand my skills.
           <br /><br />
 
-          Currently, I'm deepening my knowledge of AI, Machine Learning, RAG, the MERN Stack—MongoDB, Express.js, React, and Node.js—to build modern full-stack applications. I'm also learning Kotlin and Android development to explore mobile application development and gain a broader understanding of the software ecosystem.
+          Currently, I'm deepening my knowledge of AI, Machine Learning, RAG, the MERN Stack —to build modern full-stack applications and adapt to AI. I'm also learning Kotlin and Android development to explore mobile application development and gain a broader understanding of the software ecosystem.
 
           Beyond coding, I enjoy exploring emerging technologies, experimenting with new project ideas, and continuously improving my development practices. I believe in learning through building, collaborating with others, and creating solutions that provide meaningful value to both users and businesses.
           <br /><br />
