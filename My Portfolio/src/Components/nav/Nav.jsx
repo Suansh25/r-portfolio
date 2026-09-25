@@ -2,8 +2,6 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 import './Nav.css';
 import Home from '../Home/Home.jsx';
-import Skills from '../Skills/Skills.jsx';
-import Education from '../Education/Education.jsx';
 import Contact from '../Contact/Contact.jsx';
 import Project from '../Projects/Projects';
 
@@ -31,8 +29,6 @@ function Nav({ toggleTheme, theme }) {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/education" element={<Education />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
