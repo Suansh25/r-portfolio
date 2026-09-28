@@ -1,38 +1,45 @@
 .FooterBar {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
   color: var(--purple);
   font-family: "Doto", sans-serif;
   font-size: 20px;
   font-weight: 1000;
   font-style: normal;
-  margin-bottom: 1rem;
-  gap: 1.5rem;
 }
-.ending{
-  font-family: "Doto", sans-serif;
+
+.FooterBar a {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 8px;
+  text-decoration: none;
   color: var(--gray);
   font-weight: 1000;
-  font-size: 20px;
-  margin-left: 0;
-  margin-bottom: 0.92rem;
-  display: flex;
+  transition: color 0.3s ease;
+}
+
+.FooterBar a:hover {
+  color: var(--purple);
+  cursor: pointer;
 }
 
 .arrow-link {
   position: relative;
   display: inline-block;
+  padding-right: 15px;
+  border-radius: 6px;
   text-decoration: none;
   color: var(--purple);
-  padding-right: 15px; 
-  border-radius: 6px;
-  padding: 0px 8px;
 }
 
-
 .arrow-link::after {
-  content: "↗";  
+  content: "↗";
   position: absolute;
-  top: -6px;   
+  top: -6px;
   right: -2px;
   font-size: 14px;
   color: var(--purple);
@@ -47,68 +54,100 @@
   from {
     transform: translateY(0);
   }
+
   to {
     transform: translateY(-5px);
   }
 }
 
-.FooterBar a:hover{
-  /* color: var(--gray);
-  outline: 3px dashed var(--gray2); 
-  border-radius: 5px;
-  outline-offset: 6px;  */
-  cursor: pointer;
-}
-.FooterBar a {
-  margin-left: 0;  
-  text-decoration: none;
+.ending {
+  display: flex;
+  margin-bottom: 0.92rem;
+  margin-left: 0;
   color: var(--gray);
+  font-family: "Doto", sans-serif;
+  font-size: 20px;
   font-weight: 1000;
-  margin-right: 1.5rem;
-  transition: color 0.3s ease;
-}
-.FooterBar p {
-  font-size: 18px;
-  color: var(--gray);
-  margin: 0;
-  text-align: left;
-  margin-top: 0.5rem;
 }
 
-@media (max-width: 420px) {
+.ending p {
+  margin: 0;
+  font-size: 18px;
+  color: var(--gray);
+  text-align: left;
+}
+
+@media (max-width: 768px) {
   .FooterBar {
-    flex-direction: row;
-    align-items: center;
-    font-size: 16px;
-    margin-bottom: 1rem;
-    min-height: 100%;
-    gap: 0rem;
-    padding: 1rem;
+    gap: 1rem;
+    font-size: 18px;
   }
 
   .FooterBar a {
-    margin-right: 0;
-    font-size: 16px;
-    white-space: normal;
-    gap: 0.8rem;
+    font-size: 18px;
   }
 
-  .FooterBar p {
-    font-size: 14px;
-    margin-top: 0rem;
-    text-align: left;
+  .ending {
+    font-size: 18px;
   }
-  .ending{
-    padding-left: 15px;
+
+  .ending p {
+    font-size: 16px;
   }
-  .ending{
-  font-family: "Doto", sans-serif;
-  color: var(--gray);
-  font-weight: 1000;
-  font-size: 20px;
-  
-  display: flex;
 }
 
-  
+@media (max-width: 480px) {
+  .FooterBar {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-size: 16px;
+  }
+
+  .FooterBar a {
+    padding: 0 5px;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .arrow-link {
+    padding-right: 12px;
+  }
+
+  .arrow-link::after {
+    top: -5px;
+    right: -2px;
+    font-size: 12px;
+  }
+
+  .ending {
+    width: 100%;
+    margin-bottom: 0.7rem;
+    padding-left: 5px;
+    font-size: 16px;
+  }
+
+  .ending p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .FooterBar {
+    gap: 0.5rem;
+  }
+
+  .FooterBar a {
+    padding: 0 3px;
+    font-size: 14px;
+  }
+
+  .arrow-link::after {
+    font-size: 11px;
+  }
+
+  .ending p {
+    font-size: 13px;
+  }
 }
