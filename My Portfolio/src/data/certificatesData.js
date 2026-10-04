@@ -37,6 +37,18 @@ const certificatesData = [
     image: "",
     skills: ["React", "Node.js", "JavaScript"],
   },
+   {
+    id: 4,
+    title: "Full Stack Web Development",
+    issuer: "Coursera",
+    date: "April 2026",
+    category: "Web Development",
+    description:
+      "Certificate focused on modern frontend and backend web development technologies.",
+    credentialUrl: "https://example.com",
+    image: "",
+    skills: ["React", "Node.js", "JavaScript"],
+  },
 ];
 
 export default certificatesData;
