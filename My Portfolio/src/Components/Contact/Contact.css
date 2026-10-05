@@ -45,8 +45,483 @@ body {
   color: var(--gray);
   
 }
+/* ==========================================================
+   Certificates section — modernized, same theme
+   (purple accent, gray text, Doto display font, dark surface)
+   Class names are unchanged, so your HTML works as-is.
+   ========================================================== */
 
-/* ---------- Contact Content ---------- */
+.certificates-section {
+  --c-accent: 149, 161, 249; /* matches your purple, as RGB for alpha use */
+  --c-radius: 18px;
+  --c-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  width: 100%;
+  margin: 8rem 0 7rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* ---------- Header ---------- */
+
+.certificates-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.certificates-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  color: var(--gray);
+  font-family: "Doto", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 1000;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* small glowing dot before the label */
+.certificates-label::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--purple);
+  box-shadow: 0 0 12px rgba(var(--c-accent), 0.9);
+}
+
+.certificates-title-row h2 {
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    var(--purple) 30%,
+    rgba(var(--c-accent), 0.55)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: var(--purple); /* fallback */
+  -webkit-text-fill-color: transparent;
+  font-family: "Doto", sans-serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 1000;
+  letter-spacing: -0.05em;
+  line-height: 0.85;
+}
+
+.certificates-count {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid rgba(var(--c-accent), 0.18);
+  border-radius: 100px;
+  background: rgba(var(--c-accent), 0.05);
+  color: var(--gray);
+  font-family: "Doto", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 1000;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+
+.certificates-line {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(var(--c-accent), 0.5),
+    rgba(var(--c-accent), 0.12) 40%,
+    transparent
+  );
+}
+
+/* ---------- Scroller ---------- */
+
+.certificates-grid {
+  display: flex;
+  gap: 1.25rem;
+  width: 100%;
+  padding: 0.75rem 0 2rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 0;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+
+  /* soft fade at the right edge hints there is more to scroll */
+  -webkit-mask-image: linear-gradient(90deg, #000 90%, transparent);
+  mask-image: linear-gradient(90deg, #000 90%, transparent);
+}
+
+.certificates-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------- Card ---------- */
+
+.certificate-card {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex: 0 0 min(520px, 70vw);
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 420px;
+  padding: 2rem;
+  overflow: hidden;
+  border: 1px solid rgba(var(--c-accent), 0.14);
+  border-radius: var(--c-radius);
+  background:
+    linear-gradient(
+      160deg,
+      rgba(var(--c-accent), 0.06),
+      rgba(255, 255, 255, 0.012) 45%,
+      rgba(255, 255, 255, 0.02)
+    );
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 20px 40px -24px rgba(0, 0, 0, 0.6);
+  scroll-snap-align: start;
+  transition:
+    transform 0.5s var(--c-ease),
+    border-color 0.5s var(--c-ease),
+    box-shadow 0.5s var(--c-ease);
+}
+
+/* corner glow */
+.certificate-card::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  z-index: -1;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(
+    circle,
+    rgba(var(--c-accent), 0.2),
+    transparent 70%
+  );
+  opacity: 0.7;
+  pointer-events: none;
+  transition:
+    opacity 0.5s var(--c-ease),
+    transform 0.6s var(--c-ease);
+}
+
+/* faint dotted texture, echoes the Doto font */
+.certificate-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(
+    rgba(var(--c-accent), 0.12) 1px,
+    transparent 1px
+  );
+  background-size: 18px 18px;
+  -webkit-mask-image: linear-gradient(200deg, #000, transparent 55%);
+  mask-image: linear-gradient(200deg, #000, transparent 55%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.certificate-card:hover,
+.certificate-card:focus-within {
+  border-color: rgba(var(--c-accent), 0.45);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    0 30px 60px -28px rgba(var(--c-accent), 0.35);
+  transform: translateY(-6px);
+}
+
+.certificate-card:hover::before,
+.certificate-card:focus-within::before {
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+/* ---------- Card: top row ---------- */
+
+.certificate-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.certificate-index {
+  color: var(--gray);
+  font-family: "Doto", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 1000;
+  opacity: 0.55;
+}
+
+.certificate-category {
+  padding: 0.35rem 0.8rem;
+  border: 1px solid rgba(var(--c-accent), 0.25);
+  border-radius: 100px;
+  background: rgba(var(--c-accent), 0.08);
+  color: var(--purple);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ---------- Card: content ---------- */
+
+.certificate-content {
+  margin-top: 4rem;
+}
+
+.certificate-issuer {
+  margin: 0 0 0.8rem;
+  color: var(--gray);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.certificate-main h3 {
+  max-width: 450px;
+  margin: 0;
+  color: var(--purple);
+  font-family: "Doto", sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 1000;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+.certificate-description {
+  max-width: 430px;
+  margin: 1.25rem 0 0;
+  color: var(--gray);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  opacity: 0.8;
+  text-wrap: pretty;
+}
+
+.certificate-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 1.5rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(var(--c-accent), 0.1);
+  border-radius: 12px;
+  background: rgba(var(--c-accent), 0.035);
+}
+
+.certificate-detail-label {
+  color: var(--gray);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+.certificate-detail-value {
+  color: var(--gray);
+  font-family: "Doto", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 1000;
+  word-break: break-all;
+}
+
+/* ---------- Card: bottom row ---------- */
+
+.certificate-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(var(--c-accent), 0.12);
+}
+
+.certificate-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.certificate-tags span {
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  background: rgba(var(--c-accent), 0.07);
+  color: var(--gray);
+  font-size: 0.65rem;
+  opacity: 0.85;
+}
+
+/* removed the "/" separators — chips replace them */
+.certificate-tags span:not(:last-child)::after {
+  content: none;
+}
+
+.certificate-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+  padding: 0.55rem 1rem;
+  border: 1px solid rgba(var(--c-accent), 0.35);
+  border-radius: 100px;
+  color: var(--purple);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.35s var(--c-ease),
+    color 0.35s var(--c-ease),
+    border-color 0.35s var(--c-ease);
+}
+
+.certificate-link span {
+  display: inline-block;
+  transition: transform 0.35s var(--c-ease);
+}
+
+.certificate-link:hover {
+  border-color: var(--purple);
+  background: var(--purple);
+  color: #0b0b14;
+}
+
+.certificate-link:hover span {
+  transform: translate(3px, -3px);
+}
+
+/* ---------- Accessibility ---------- */
+
+.certificate-link:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 3px;
+}
+
+.certificates-grid:focus-visible {
+  outline: 2px solid rgba(var(--c-accent), 0.6);
+  outline-offset: 4px;
+  border-radius: var(--c-radius);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .certificate-card,
+  .certificate-card::before,
+  .certificate-link,
+  .certificate-link span {
+    transition: none;
+  }
+
+  .certificate-card:hover,
+  .certificate-card:focus-within {
+    transform: none;
+  }
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+  .certificates-section {
+    margin: 6rem 0 5rem;
+  }
+
+  .certificates-title-row {
+    margin-bottom: 2rem;
+  }
+
+  .certificate-card {
+    --c-radius: 16px;
+    flex-basis: 78vw;
+    min-height: 400px;
+    padding: 1.5rem;
+  }
+
+  .certificate-content {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificates-section {
+    margin: 5rem 0 4rem;
+  }
+
+  .certificates-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .certificates-title-row h2 {
+    font-size: 3.2rem;
+  }
+
+  .certificates-count {
+    margin-top: 0;
+  }
+
+  .certificate-card {
+    flex-basis: 86vw;
+    min-height: 410px;
+    padding: 1.25rem;
+  }
+
+  .certificate-content {
+    margin-top: 2.5rem;
+  }
+
+  .certificate-main h3 {
+    font-size: 1.55rem;
+  }
+
+  .certificate-description {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+
+  .certificate-bottom {
+    align-items: flex-end;
+  }
+
+  .certificate-tags {
+    max-width: 55%;
+  }
+
+  .certificate-link {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.68rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .certificates-title-row h2 {
+    font-size: 2.7rem;
+  }
+
+  .certificate-card {
+    flex-basis: 88vw;
+    min-height: 420px;
+  }
+
+  .certificate-main h3 {
+    font-size: 1.4rem;
+  }
+}
+
 .contact-socials {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
