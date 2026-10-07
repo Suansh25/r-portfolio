@@ -45,14 +45,8 @@ body {
   color: var(--gray);
   
 }
-/* ==========================================================
-   Certificates section — modernized, same theme
-   (purple accent, gray text, Doto display font, dark surface)
-   Class names are unchanged, so your HTML works as-is.
-   ========================================================== */
-
 .certificates-section {
-  --c-accent: 149, 161, 249; /* matches your purple, as RGB for alpha use */
+  --c-accent: 149, 161, 249; 
   --c-radius: 18px;
   --c-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
@@ -60,8 +54,6 @@ body {
   margin: 8rem 0 7rem;
   font-family: "Noto Sans", sans-serif;
 }
-
-/* ---------- Header ---------- */
 
 .certificates-title-row {
   display: flex;
@@ -103,7 +95,7 @@ body {
   );
   -webkit-background-clip: text;
   background-clip: text;
-  color: var(--purple); /* fallback */
+  color: var(--purple);
   -webkit-text-fill-color: transparent;
   font-family: "Doto", sans-serif;
   font-size: clamp(3rem, 7vw, 6rem);
@@ -137,7 +129,6 @@ body {
   );
 }
 
-/* ---------- Scroller ---------- */
 
 .certificates-grid {
   display: flex;
@@ -193,26 +184,7 @@ body {
     box-shadow 0.5s var(--c-ease);
 }
 
-/* corner glow */
-.certificate-card::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  right: -60px;
-  z-index: -1;
-  width: 240px;
-  height: 240px;
-  background: radial-gradient(
-    circle,
-    rgba(var(--c-accent), 0.2),
-    transparent 70%
-  );
-  opacity: 0.7;
-  pointer-events: none;
-  transition:
-    opacity 0.5s var(--c-ease),
-    transform 0.6s var(--c-ease);
-}
+
 
 /* faint dotted texture, echoes the Doto font */
 .certificate-card::after {
@@ -246,7 +218,7 @@ body {
   transform: scale(1.25);
 }
 
-/* ---------- Card: top row ---------- */
+
 
 .certificate-top {
   display: flex;
@@ -275,7 +247,6 @@ body {
   text-transform: uppercase;
 }
 
-/* ---------- Card: content ---------- */
 
 .certificate-content {
   margin-top: 4rem;
@@ -341,7 +312,7 @@ body {
   word-break: break-all;
 }
 
-/* ---------- Card: bottom row ---------- */
+
 
 .certificate-bottom {
   display: flex;
@@ -367,7 +338,7 @@ body {
   opacity: 0.85;
 }
 
-/* removed the "/" separators — chips replace them */
+
 .certificate-tags span:not(:last-child)::after {
   content: none;
 }
@@ -405,7 +376,7 @@ body {
   transform: translate(3px, -3px);
 }
 
-/* ---------- Accessibility ---------- */
+
 
 .certificate-link:focus-visible {
   outline: 2px solid var(--purple);
@@ -432,7 +403,7 @@ body {
   }
 }
 
-/* ---------- Responsive ---------- */
+
 
 @media (max-width: 768px) {
   .certificates-section {
@@ -584,7 +555,7 @@ body {
   text-align: justify;
 }
 
-/* ---------- Contact Section ---------- */
+
 
 .contentforcontact-section {
   display: flex;
@@ -604,7 +575,7 @@ body {
   backdrop-filter: blur(8px);
 }
 
-/* ---------- Contact Info ---------- */
+
 
 .contact-name {
   margin-bottom: 10px;
@@ -618,8 +589,6 @@ body {
   font-size: 0.92rem;
   color: var(--purple);
 }
-
-/* ---------- Links ---------- */
 
 .contact-links {
   display: flex;
@@ -653,7 +622,7 @@ body {
 .social-links a:hover {
   color: var(--gray);
 }
-/* Tablets */
+
 @media (max-width: 768px) {
   .contact-socials {
     grid-template-columns: 1fr;
@@ -662,7 +631,7 @@ body {
   }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
   .contact-socials {
     gap: 1.25rem;
@@ -673,7 +642,7 @@ body {
     font-size: 1.25rem;
   }
 }
-/* ---------- Mobile ---------- */
+
 
 @media (max-width: 768px) {
   .contentforcontact {
