@@ -1,5 +1,6 @@
 import "./Contact.css";
 import ContactSection from "./ContactSection";
+import Certificates from "./Certificates";
 
 function Contact() {
   return (
@@ -8,6 +9,8 @@ function Contact() {
 
       <section className="contact-section">
         <ContactSection />
+
+        <Certificates />
       </section>
 
       <hr className="dotted-line" />

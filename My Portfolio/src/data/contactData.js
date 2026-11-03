@@ -6,7 +6,7 @@ const contactData = {
   intro: {
     title: "Intro",
     content:
-      "Hi, I'm Suansh. I am a graduate with a B.Tech degree in Computer Science and Business Systems, and I'm passionate about building technology that solves real-world problems. I enjoy creating user-friendly, responsive web applications that provide seamless experiences while balancing both technical excellence and business needs.",
+      "Hi, I'm Suansh (Pronounced soo-ansh (IPA: sˈuː.ænʃ).). I am a graduate with an engineering degree in Computer Science and Business Systems, and I'm passionate about building technology that could help people in real life including me. I enjoy creating user-friendly, responsive web applications that provide seamless experiences while balancing both technical needs and business requirements.",
   },
 
   experience: {

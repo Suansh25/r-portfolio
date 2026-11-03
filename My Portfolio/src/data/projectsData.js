@@ -27,24 +27,24 @@ const projectsData = [
       "Recommend options with nutrition breakdowns."
     ],
 
-    images: [
-      {
-        src: "/Images/NutriVision/home.png",
-        alt: "Home page of Nutrivision"
-      },
-      {
-        src: "/Images/NutriVision/Diagnosis.png",
-        alt: "Diagnosis Results"
-      },
-      {
-        src: "/Images/NutriVision/factors.png",
-        alt: "Key Factors"
-      },
-      {
-        src: "/Images/NutriVision/Architecture diagram.png",
-        alt: "Architecture Diagram"
-      }
-    ],
+   images: [
+  {
+    src: `/r-portfolio/Images/NutriVision/home.png`,
+    alt: "Home page of Nutrivision"
+  },
+  {
+    src: `/r-portfolio/Images/NutriVision/Diagnosis.png`,
+    alt: "Diagnosis Results"
+  },
+  {
+    src: `/r-portfolio/Images/NutriVision/factors.png`,
+    alt: "Key Factors"
+  },
+  {
+    src: `/r-portfolio/Images/NutriVision/Architecture diagram.png`,
+    alt: "Architecture Diagram"
+  }
+],
 
     results: [
       "Enhanced image quality through preprocessing.",
@@ -86,23 +86,23 @@ const projectsData = [
 
     images: [
       {
-        src: "/Images/NagaraVihari/NV home.png",
+        src: `/r-portfolio/Images/NagaraVihari/NV home.png`,
         alt: "Home page"
       },
       {
-        src: "/Images/NagaraVihari/NV Osm.png",
+        src: `/r-portfolio/Images/NagaraVihari/NV Osm.png`,
         alt: "OSM Maps"
       },
       {
-        src: "/Images/NagaraVihari/NV Destinations.png",
+        src: `/r-portfolio/Images/NagaraVihari/NV Destinations.png`,
         alt: "Destinations"
       },
       {
-        src: "/Images/NagaraVihari/NV Badges.png",
+        src: `/r-portfolio/Images/NagaraVihari/NV Badges.png`,
         alt: "Badges"
       },
       {
-        src: "/Images/NagaraVihari/NV details.png",
+        src: `/r-portfolio/Images/NagaraVihari/NV details.png`,
         alt: "Location Details"
       }
     ],
@@ -146,19 +146,19 @@ const projectsData = [
 
     images: [
       {
-        src: "/Images/FitTrack/Main.png",
+        src: `/r-portfolio/Images/FitTrack/Main.png`,
         alt: "Home page"
       },
       {
-        src: "/Images/FitTrack/Insights.png",
+        src: `/r-portfolio/Images/FitTrack/Insights.png`,
         alt: "Insights"
       },
       {
-        src: "/Images/FitTrack/progress.png",
+        src: `/r-portfolio/Images/FitTrack/progress.png`,
         alt: "Progress"
       },
       {
-        src: "/Images/FitTrack/food.png",
+        src: `/r-portfolio/Images/FitTrack/food.png`,
         alt: "Food"
       }
     ],
