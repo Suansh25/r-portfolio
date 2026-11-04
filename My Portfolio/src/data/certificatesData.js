@@ -10,7 +10,7 @@ const certificatesData = [
       "Certificate covering basics of AI and uses of AI for an Employee.",
     credentialUrl: "https://www.udemy.com/certificate/UC-01c97a78-675c-4240-ad3f-0e704220883b/",
     image: "",
-    skills: ["AI", "Claude","Perplexity","Gamma"],
+    skills: ["AI", "Claude","Perplexity","Gamma","AI models"],
   },
 
   {
@@ -24,7 +24,7 @@ const certificatesData = [
       "Learned how to use AI models in real world projects along with fundamentals of Python.",
     credentialUrl: "https://www.udemy.com/certificate/UC-d7048905-15e0-4492-ad45-f8a8c9c6c5a6/",
     image: "",
-    skills: ["AI", "GenAI", "LLMs","Python"],
+    skills: ["AI", "GenAI", "LLMs","Python","GenAI"],
   },
 
   {
@@ -38,7 +38,7 @@ const certificatesData = [
       "Learned about the fundamentals of General Data Protection Regulation.",
     credentialUrl: "https://www.udemy.com/certificate/UC-090e5167-c1ad-465e-a22c-cf5319a75da9/",
     image: "",
-    skills: ["Data Privacy", "GDPR", "JavaScript"],
+    skills: ["Data Privacy", "GDPR", "JavaScript","DataPrivacy"],
   },
    {
     id: 3,
@@ -51,7 +51,7 @@ const certificatesData = [
       "Scored 8.5/9 score earning a description of proficient in English language in terms of listening, speaking, reading and writing.",
     credentialUrl: "https://images.wexledu.com/gok250833/bet-report-card/47fdb681-22ed-4a7b-856a-7a7c3ac7ff23",  
     image: "",
-    skills: ["English Language"],
+    skills: ["English Language skills"],
   },
   {
     id: 4,
