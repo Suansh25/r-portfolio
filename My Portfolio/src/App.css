@@ -1,17 +1,21 @@
 :root {
-  --bg-color: #040404;
-  --gray: #F2F1F2;
-  --purple: #95A1F9;
-  --gray2: #ffffff5e;
+  --bg-color: #2f3e46;
+  --gray: #cad2c5;
+  --purple: #84a98c;
+  --gray2: #52796f;
 }
- /* Dark classic blue (#0A1828), turquoise (#178582), gold (#BFA181) */
+
 .light-theme {
-  --bg-color: #FFFDF2;
-  --gray: #000000;
-  --purple: #767778e7;
-  --gray2: #040404;
+  --bg-color: #cad2c5;
+  --gray: #2f3e46;
+  --purple: #84a98c;
+  --gray2: #2f3e46;
   --purple-rgb: 149, 161, 249;
 }
+  /* --bg-color: #FFFDF2;
+  --gray: #000000;
+  --purple: #767778e7;
+  --gray2: #040404; */
 .container{
   width: 700px;            
   margin: 0 auto;          

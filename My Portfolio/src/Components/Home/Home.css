@@ -2,15 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-:root {
-   --bg-color :#040404;
-    --gray: #F2F1F2;
-    --purple:#95A1F9;
-      --gray2: #ffffff5e;
-}
-* {
-  color: var(--gray);
-}
+
 .title {
   text-align: left;
   font-family: "Noto Sans", sans-serif;
